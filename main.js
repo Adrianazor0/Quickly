@@ -1,6 +1,6 @@
  function nouser() {
      var nouser = "";
-     nouser = prompt("Para solicitar nuestrsos servicios debe estar registrado.\n\nDesea registrarse?Y/N");
+     nouser = prompt("Para solicitar nuestros servicios debe estar registrado.\n\nDesea registrarse?Y/N");
      if ((nouser == "y") || (nouser == "Y")) {
          window.location.href = "contacto.html";
          return false;
@@ -25,51 +25,18 @@
      $("#iniciar").click(function() {
          var user = "user";
          var admin = "admin";
-         var Adrian = "Adrian";
-         var Luis = "Luis";
-         var Adriana = "Adriana";
-         var Luisa = "Luisa";
-         var Vicente = "Vicente";
-         var Vicentea = "Vicentea";
          var passwordUser = "567";
          var passwordAdmin = "123";
-         var passwordAdrian = "40200423743"
-         var passwordLuis = "40200448153"
-         var passwordVicente = "40224189387"
          var usuarioInput = $("#user").val();
          var claveInput = $("#password").val();
          var usuario = "";
 
-         if ((Adrian == usuarioInput) && (passwordAdrian == claveInput)) {
-             usuario = Adrian;
-             localStorage.setItem("usu", usuario);
-             window.location.href = "usersonly.html";
-         } else if ((Luis == usuarioInput) && (passwordLuis == claveInput)) {
-             usuario = Luis;
-             localStorage.setItem("usu", usuario);
-             window.location.href = "usersonly.html";
-         } else if ((Vicente == usuarioInput) && (passwordVicente == claveInput)) {
-             usuario = Vicente;
-             localStorage.setItem("usu", usuario);
-             window.location.href = "usersonly.html";
-         } else if ((user == usuarioInput) && (passwordUser == claveInput)) {
+         if ((user == usuarioInput) && (passwordUser == claveInput)) {
              usuario = user;
              localStorage.setItem("usu", usuario);
              window.location.href = "usersonly.html";
          } else if ((admin == usuarioInput) && (passwordAdmin == claveInput)) {
              usuario = admin;
-             localStorage.setItem("usu", usuario);
-             window.location.href = "adminsonly.html";
-         } else if ((Luisa == usuarioInput) && (passwordLuis == claveInput)) {
-             usuario = "Administrador Luis";
-             localStorage.setItem("usu", usuario);
-             window.location.href = "adminsonly.html";
-         } else if ((Adriana == usuarioInput) && (passwordAdrian == claveInput)) {
-             usuario = "Administrador Adrian";
-             localStorage.setItem("usu", usuario);
-             window.location.href = "adminsonly.html";
-         } else if ((Vicentea == usuarioInput) && (passwordVicente == claveInput)) {
-             usuario = "Administrador Vicente";
              localStorage.setItem("usu", usuario);
              window.location.href = "adminsonly.html";
          } else {
