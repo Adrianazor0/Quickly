@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly</title>
+    <link rel="shortcut icon" href="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            var estado = localStorage.getItem("usu");
+            document.getElementById('h1').innerHTML = estado;
+            if ((estado == null) || (estado == "")) {
+                document.getElementById("navuser").style.display = "none";
+            } else {
+                document.getElementById("navnouser").style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="barra row">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-danger col">
+            <a id="nombreEmpresa" class="navbar-brand" href="index.html"><img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg"> Quickly</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown disable" aria-haspopup="true" aria-expanded="false">
+                          Servicios
+                        </a>
+                        <div class="dropdown-menu navbar-dark bg-danger" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="servicio1.html">Transporte de contendores</a>
+                            <a class="dropdown-item" href="servicio2.html">Transporte de carga suelta</a>
+                            <a class="dropdown-item" href="servicio3.html">Carga de Proyectos</a>
+                            <a class="dropdown-item" href="servicio4.html">Transporte turistico</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" onclick="nouser()">Solicitar servicio</a>
+                    </li>
+                    <li class="nav-item contact">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="row nav" id="navnouser">
+                    <form action="" id="formulario2" class="bg-danger text-white row">
+                        <h4 class="col">login:</h4>
+                        <div class="form-group col">
+                            <input type="text" class="form-control" id="user" placeholder="Usuario">
+                        </div>
+                        <div class="form-group col">
+                            <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                        </div>
+                        <div class="boton col">
+                            <button type="submit" id="iniciar" class="btn btn-white">Iniciar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row nav" id="navuser">
+                    <div class="boton col">
+                        <h1 style="color: white; font-size: 25px;" id="h1"></h1>
+                    </div>
+                    <div class="boton col">
+                        <button type="submit" id="cerrar" class="btn btn-white">Cerrar sesion</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <article>
+        <section class="despegar">
+
+            <div class="container despegar" id="nosotros">
+                <h1>Transporte de contenedores</h1>
+            </div>
+            <section class="texto">
+                <p class="lead ">En el transporte en contenedores toda la mercancía se porta como una sola unidad de carga. De forma que se facilita su traslado, su carga y su descarga tanto en origen como en destino.</p>
+            </section>
+        </section>
+    </article>
+    <article>
+        <section class="borroso">
+            <h2 id="nosotros" class="fondo contenedores" style="height: 300px;"></h2>
+        </section>
+        <section class="texto">
+            <h3 class="valor">Beneficios que ofrecemos.</h3>
+            <hr>
+            <h4>Normas ISO</h4>
+            <p class="lead ">Debido a su extensión, rápida adopción en una gran cantidad de sectores y a su popularización se hizo necesario crear una normalización para el transporte en contenedores: las normas ISO, un conjunto de medidas que regulan tamaños estandarizados
+                y universales de contenedores.</p>
+            <h4>Brinda flexibilidad</h4>
+            <p class="lead ">Un contenedor brinda flexibilidad, ya que en su interior puede transportar distintos tipos de mercancías identificadas. Alimentos, todo tipo de materias primas, piezas industriales o de manufacturación y hasta vehículos, entre otras.</p>
+            <h4>Mayor velocidad de carga y descarga</h4>
+            <p class="lead ">La mercadería que porta el transporte en contenedores es más rápida de cargar y descargar que la de la mercancía a granel. Esto permite que todas estas se hagan a mayor velocidad, ahorrando tiempo y costes.</p>
+            <h4>Más seguros frente a daños, golpes y robos</h4>
+            <p class="lead ">Tanto si realiza transporte de contenedores por carretera o por vía marítima, el contenedor es como un almacén en movimiento. Fabricados de acero, resisten los golpes y los daños ocasionados por la crudeza del clima.</p>
+        </section>
+
+    </article>
+    <footer>
+        <div class="text-white bg-danger">
+            <div class="card-body ">
+                <blockquote class="blockquote mb-0 bordesito" id="imgback">
+                    <p><img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg"> Con nosotros al volante, todos tus viajes estan seguros.</p>
+                    <p><small>Avenida Abraham Lincoln 309, Santo Domingo, República Dominicana. Tel.809-849-0000</small></p>
+                </blockquote>
+            </div>
+        </div>
+        <div id="espacio"></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,935 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: monospace;
+    }
+    .barra {
+        background-size: cover;
+        position: relative;
+        top: 0px;
+        left: 15px;
+        width: 100%;
+        box-shadow: 0 10px 20px rgba(250, 248, 248, 0.473);
+        z-index: 2;
+    }
+    .barra nav #nombreEmpresa {
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic;
+        height: 50px;
+    }
+    .barra nav a img {
+        width: 40px;
+        height: 40px;
+    }
+    .nav-link {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+    .nav {
+        text-align: right;
+    }
+    .nav h4 {
+        padding: 0px;
+        box-sizing: initial;
+        width: 80px;
+    }
+    .nav form {
+        position: relative;
+        height: 50px;
+        margin-top: -8px;
+    }
+    .nav form h4 {
+        font-size: 20px;
+    }
+    .nav form input {
+        height: 30px;
+    }
+    .nav form .boton {
+        padding: 0px;
+        position: relative;
+        bottom: 4.5px;
+        height: 20px;
+    }
+    .contact {
+        z-index: 2;
+    }
+    .despegar {
+        position: relative;
+        top: 15px;
+    }
+    #back {
+        background-image: url("https://www.esan.edu.pe/apuntes-empresariales/2018/08/24/1200x630_optimizar_rutas_transporte.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+    #back {
+        margin-bottom: 0px;
+        width: auto;
+    }
+    #back img {
+        width: 200px;
+    }
+    #borroso {
+        background-color: rgba(245, 245, 245, 0.473);
+        padding: 10px;
+    }
+    #borroso h2 {
+        font-weight: 800;
+        font-style: italic;
+        font-size: 50px;
+        color: whitesmoke;
+    }
+    #borroso p {
+        font-weight: 700;
+        font-size: 20px;
+        font-style: italic;
+    }
+    #socialRedes {
+        right: 0;
+        position: fixed;
+        top: 50%;
+    }
+    #socialRedes ul {
+        list-style: none;
+    }
+    .card {
+        margin: 10px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+    .icono {
+        font-size: 30px;
+        color: whitesmoke;
+        background-color: rgba(218, 9, 9, 0.822);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .icono:hover {
+        color: rgba(235, 12, 12, 0.363);
+    }
+    #imgback img {
+        width: 50px;
+    }
+    #imgback {
+        font-weight: 500;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .bordesito {
+        border-radius: none;
+    }
+    #subtitulo {
+        text-align: center;
+        margin: 10px;
+        font-weight: 700;
+        font-style: italic;
+        margin-bottom: 40px;
+    }
+    #nosotros {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #nosotros img {
+        width: 200px;
+        margin: 10px;
+    }
+    #nosotros h1 {
+        font-weight: 900;
+        font-style: italic;
+        color: rgba(218, 9, 9, 0.822);
+    }
+    .fondo {
+        background-image: url("https://www.carreteras-pa.com/wp-content/uploads/2/2016/07/La-Red-Vial-p16.jpg");
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        padding-top: 140px;
+        color: black;
+        font-Weight: 800;
+    }
+    .texto {
+        margin: 10px;
+        text-align: justify;
+    }
+    .texto p {
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .mision {
+        background-image: url("https://rlc.es/wp-content/uploads/2019/03/agencias-de-transporte.jpg");
+    }
+    .valor {
+        color: rgba(218, 9, 9, 0.822);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .servicios h1 {
+        text-align: center;
+        font-weight: 900;
+        font-style: italic;
+        padding: 40px;
+        font-size: 45px;
+    }
+    .carousel-inner img {
+        height: 300px;
+        width: auto;
+    }
+    .d-none {
+        display: block;
+    }
+    .contenedores {
+        background-image: url("https://www.dracontainers.com/blog/wp-content/uploads/2018/06/Banner1.jpg");
+    }
+    .suelta {
+        background-image: url("https://scocargo.mx/wp-content/uploads/2019/09/Carga-Suelta-Articulo.jpg.png-1160x665.jpg");
+    }
+    .proyecto {
+        background-image: url("https://mantix.co/euro_la/wp-content/uploads/2019/09/cargaP-copia.jpg");
+    }
+    .puerta {
+        background-image: url("https://amadortours.files.wordpress.com/2012/05/280671_101932933240481_740505_o1.jpg");
+    }
+    form {
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+    }
+    form h2 {
+        text-align: center;
+        padding: 5px;
+    }
+    .boton {
+        text-align: center;
+    }
+    .contactos {
+        text-align: center;
+        margin: 20px;
+        display: flex;
+    }
+    .contactos i {
+        font-size: 100px;
+    }
+    .form1 {
+        border-radius: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-family: monospace;
+    }
+    .barra {
+        background-size: cover;
+        position: fixed;
+        top: 0px;
+        left: 15px;
+        width: 100%;
+        box-shadow: 0 10px 20px rgba(250, 248, 248, 0.473);
+        z-index: 2;
+        height: auto;
+    }
+    .barra nav #nombreEmpresa {
+        font-size: 40px;
+        font-weight: 800;
+        font-style: italic;
+    }
+    .barra nav a img {
+        width: 80px;
+        height: 80px;
+    }
+    .nav-link {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+    .nav {
+        text-align: right;
+    }
+    .nav h4 {
+        padding: 0px;
+        box-sizing: initial;
+        width: 80px;
+    }
+    .nav form {
+        position: relative;
+    }
+    .nav form .boton {
+        padding: 0px;
+        position: relative;
+    }
+    .contact {
+        z-index: 2;
+    }
+    .despegar {
+        position: relative;
+        top: 15px;
+        margin-top: 400px;
+    }
+    #back {
+        background-image: url("https://www.esan.edu.pe/apuntes-empresariales/2018/08/24/1200x630_optimizar_rutas_transporte.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+    #back {
+        margin-bottom: 0px;
+        width: auto;
+    }
+    #back img {
+        width: 200px;
+    }
+    #borroso {
+        background-color: rgba(245, 245, 245, 0.473);
+        padding: 10px;
+    }
+    #borroso h2 {
+        font-weight: 800;
+        font-style: italic;
+        font-size: 50px;
+        color: whitesmoke;
+    }
+    #borroso p {
+        font-weight: 700;
+        font-size: 20px;
+        font-style: italic;
+    }
+    #socialRedes {
+        right: 0;
+        position: fixed;
+        top: 50%;
+    }
+    #socialRedes ul {
+        list-style: none;
+    }
+    .card {
+        margin: 10px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+    .icono {
+        font-size: 30px;
+        color: whitesmoke;
+        background-color: rgba(218, 9, 9, 0.822);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .icono:hover {
+        color: rgba(235, 12, 12, 0.363);
+    }
+    #imgback img {
+        width: 50px;
+    }
+    #imgback {
+        font-weight: 500;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .bordesito {
+        border-radius: none;
+    }
+    #subtitulo {
+        text-align: center;
+        margin: 10px;
+        font-weight: 700;
+        font-style: italic;
+        margin-bottom: 40px;
+    }
+    #nosotros {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #nosotros img {
+        width: 200px;
+        margin: 10px;
+    }
+    #nosotros h1 {
+        font-weight: 900;
+        font-style: italic;
+        color: rgba(218, 9, 9, 0.822);
+    }
+    .fondo {
+        background-image: url("https://www.carreteras-pa.com/wp-content/uploads/2/2016/07/La-Red-Vial-p16.jpg");
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        padding-top: 140px;
+        color: black;
+        font-Weight: 800;
+    }
+    .texto {
+        margin: 10px;
+        text-align: justify;
+    }
+    .texto p {
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .mision {
+        background-image: url("https://rlc.es/wp-content/uploads/2019/03/agencias-de-transporte.jpg");
+    }
+    .valor {
+        color: rgba(218, 9, 9, 0.822);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .servicios h1 {
+        text-align: center;
+        font-weight: 900;
+        font-style: italic;
+        padding: 40px;
+        font-size: 45px;
+    }
+    .carousel-inner img {
+        height: 300px;
+        width: auto;
+    }
+    .d-none {
+        display: block;
+    }
+    .contenedores {
+        background-image: url("https://www.dracontainers.com/blog/wp-content/uploads/2018/06/Banner1.jpg");
+    }
+    .suelta {
+        background-image: url("https://scocargo.mx/wp-content/uploads/2019/09/Carga-Suelta-Articulo.jpg.png-1160x665.jpg");
+    }
+    .proyecto {
+        background-image: url("https://mantix.co/euro_la/wp-content/uploads/2019/09/cargaP-copia.jpg");
+    }
+    .puerta {
+        background-image: url("https://amadortours.files.wordpress.com/2012/05/280671_101932933240481_740505_o1.jpg");
+    }
+    form {
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+    }
+    form h2 {
+        text-align: center;
+        padding: 5px;
+    }
+    .boton {
+        text-align: center;
+    }
+    .contactos {
+        text-align: center;
+        margin: 20px;
+        display: flex;
+    }
+    .contactos i {
+        font-size: 100px;
+    }
+    .form1 {
+        border-radius: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 992px) {
+    body {
+        font-family: monospace;
+    }
+    .barra {
+        background-size: cover;
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        width: 100%;
+        box-shadow: 0 10px 20px rgba(250, 248, 248, 0.473);
+        z-index: 2;
+    }
+    .barra nav #nombreEmpresa {
+        font-size: 40px;
+        font-weight: 800;
+        font-style: italic;
+    }
+    .barra nav a img {
+        width: 80px;
+        height: 80px;
+    }
+    .nav-link {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+    .nav {
+        text-align: right;
+    }
+    .nav h4 {
+        padding: 0px;
+        box-sizing: initial;
+        width: 80px;
+    }
+    .nav form {
+        position: relative;
+        top: 10px;
+        right: 20px;
+        padding: 0px;
+    }
+    .nav form .boton {
+        padding: 0px;
+        border: none;
+        width: 80px;
+        position: relative;
+        right: 20px;
+    }
+    .contact {
+        z-index: 2;
+    }
+    .despegar {
+        margin-top: 120px;
+    }
+    #back {
+        background-image: url("https://www.esan.edu.pe/apuntes-empresariales/2018/08/24/1200x630_optimizar_rutas_transporte.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+    #back {
+        margin-bottom: 0px;
+        width: auto;
+    }
+    #back img {
+        width: 200px;
+    }
+    #borroso {
+        background-color: rgba(245, 245, 245, 0.473);
+        padding: 10px;
+    }
+    #borroso h2 {
+        font-weight: 800;
+        font-style: italic;
+        font-size: 50px;
+        color: whitesmoke;
+    }
+    #borroso p {
+        font-weight: 700;
+        font-size: 20px;
+        font-style: italic;
+    }
+    #socialRedes {
+        right: 0;
+        position: fixed;
+        top: 50%;
+    }
+    #socialRedes ul {
+        list-style: none;
+    }
+    .card {
+        margin: 10px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+    .icono {
+        font-size: 30px;
+        color: whitesmoke;
+        background-color: rgba(218, 9, 9, 0.822);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .icono:hover {
+        color: rgba(235, 12, 12, 0.363);
+    }
+    #imgback img {
+        width: 50px;
+    }
+    #imgback {
+        font-weight: 500;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .bordesito {
+        border-radius: none;
+    }
+    #subtitulo {
+        text-align: center;
+        margin: 10px;
+        font-weight: 700;
+        font-style: italic;
+        margin-bottom: 40px;
+    }
+    #nosotros {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #nosotros img {
+        width: 200px;
+        margin: 10px;
+    }
+    #nosotros h1 {
+        font-weight: 900;
+        font-style: italic;
+        color: rgba(218, 9, 9, 0.822);
+    }
+    .fondo {
+        background-image: url("https://www.carreteras-pa.com/wp-content/uploads/2/2016/07/La-Red-Vial-p16.jpg");
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        padding-top: 140px;
+        color: black;
+        font-Weight: 800;
+    }
+    .texto {
+        margin: 30px;
+        margin-left: 200px;
+        margin-right: 200px;
+        text-align: justify;
+    }
+    .texto p {
+        font-weight: 500;
+        margin-bottom: 50px;
+        grid-template-columns: auto;
+    }
+    .mision {
+        background-image: url("https://rlc.es/wp-content/uploads/2019/03/agencias-de-transporte.jpg");
+    }
+    .valor {
+        color: rgba(218, 9, 9, 0.822);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .servicios h1 {
+        text-align: center;
+        font-weight: 900;
+        font-style: italic;
+        padding: 40px;
+        font-size: 45px;
+    }
+    .carousel-inner img {
+        height: 600px;
+        width: auto;
+    }
+    .contenedores {
+        background-image: url("https://www.dracontainers.com/blog/wp-content/uploads/2018/06/Banner1.jpg");
+    }
+    .suelta {
+        background-image: url("https://scocargo.mx/wp-content/uploads/2019/09/Carga-Suelta-Articulo.jpg.png-1160x665.jpg");
+    }
+    .proyecto {
+        background-image: url("https://mantix.co/euro_la/wp-content/uploads/2019/09/cargaP-copia.jpg");
+    }
+    .puerta {
+        background-image: url("https://amadortours.files.wordpress.com/2012/05/280671_101932933240481_740505_o1.jpg");
+    }
+    form {
+        border-radius: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 20px;
+    }
+    .error1 {
+        color: red;
+        visibility: hidden;
+    }
+    .error {
+        color: white;
+    }
+    #formulario1 {
+        width: 500px;
+    }
+    form h2 {
+        text-align: center;
+        padding: 5px;
+    }
+    .boton {
+        text-align: center;
+    }
+    .contactos {
+        text-align: center;
+        margin: 20px;
+    }
+    .contactos i {
+        font-size: 100px;
+    }
+    #userStyle img {
+        height: 200px;
+    }
+    #userStyle {
+        text-align: left;
+    }
+    #userStyle form {
+        text-align: center;
+        padding: 5px;
+    }
+    .form1 {
+        border-radius: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5px;
+    }
+    #espacio {
+        background-color: white;
+        height: 1%;
+    }
+    footer p img {
+        width: 30px;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    body {
+        font-family: monospace;
+    }
+    .barra {
+        background-size: cover;
+        position: relative;
+        top: 0px;
+        left: 10px;
+        width: 100%;
+        box-shadow: 0 10px 20px rgba(250, 248, 248, 0.473);
+        z-index: 2;
+    }
+    .barra nav #nombreEmpresa {
+        font-size: 40px;
+        font-weight: 800;
+        font-style: italic;
+    }
+    .barra nav a img {
+        width: 80px;
+        height: 80px;
+    }
+    .nav-link {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+    .nav {
+        text-align: right;
+    }
+    .nav h4 {
+        padding: 0px;
+        box-sizing: initial;
+        width: 80px;
+    }
+    .nav form {
+        position: relative;
+        top: 10px;
+        right: 20px;
+        padding: 0px;
+    }
+    .nav form .boton {
+        padding: 0px;
+        border: none;
+        width: 80px;
+        position: relative;
+        right: 20px;
+    }
+    .contact {
+        z-index: 2;
+    }
+    #back {
+        background-image: url("https://www.esan.edu.pe/apuntes-empresariales/2018/08/24/1200x630_optimizar_rutas_transporte.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+    #back {
+        margin-bottom: 0px;
+        width: auto;
+    }
+    #back img {
+        width: 200px;
+    }
+    #borroso {
+        background-color: rgba(245, 245, 245, 0.473);
+        padding: 10px;
+    }
+    #borroso h2 {
+        font-weight: 800;
+        font-style: italic;
+        font-size: 50px;
+        color: whitesmoke;
+    }
+    #borroso p {
+        font-weight: 700;
+        font-size: 20px;
+        font-style: italic;
+    }
+    #socialRedes {
+        right: 0;
+        position: fixed;
+        top: 50%;
+    }
+    #socialRedes ul {
+        list-style: none;
+    }
+    .card {
+        margin: 10px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+    .icono {
+        font-size: 30px;
+        color: whitesmoke;
+        background-color: rgba(218, 9, 9, 0.822);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .icono:hover {
+        color: rgba(235, 12, 12, 0.363);
+    }
+    #imgback img {
+        width: 50px;
+    }
+    #imgback {
+        font-weight: 500;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .bordesito {
+        border-radius: none;
+    }
+    #subtitulo {
+        text-align: center;
+        margin: 10px;
+        font-weight: 700;
+        font-style: italic;
+        margin-bottom: 40px;
+    }
+    #nosotros {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #nosotros img {
+        width: 200px;
+        margin: 10px;
+    }
+    #nosotros h1 {
+        font-weight: 900;
+        font-style: italic;
+        color: rgba(218, 9, 9, 0.822);
+    }
+    .fondo {
+        background-image: url("https://www.carreteras-pa.com/wp-content/uploads/2/2016/07/La-Red-Vial-p16.jpg");
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        padding-top: 140px;
+        color: black;
+        font-Weight: 800;
+    }
+    .texto {
+        margin: 30px;
+        margin-left: 200px;
+        margin-right: 200px;
+        text-align: justify;
+    }
+    .texto p {
+        font-weight: 500;
+        margin-bottom: 50px;
+        grid-template-columns: auto;
+    }
+    .mision {
+        background-image: url("https://rlc.es/wp-content/uploads/2019/03/agencias-de-transporte.jpg");
+    }
+    .valor {
+        color: rgba(218, 9, 9, 0.822);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .servicios h1 {
+        text-align: center;
+        font-weight: 900;
+        font-style: italic;
+        padding: 40px;
+        font-size: 45px;
+    }
+    .carousel-inner img {
+        height: 600px;
+        width: auto;
+    }
+    .contenedores {
+        background-image: url("https://www.dracontainers.com/blog/wp-content/uploads/2018/06/Banner1.jpg");
+    }
+    .suelta {
+        background-image: url("https://scocargo.mx/wp-content/uploads/2019/09/Carga-Suelta-Articulo.jpg.png-1160x665.jpg");
+    }
+    .proyecto {
+        background-image: url("https://mantix.co/euro_la/wp-content/uploads/2019/09/cargaP-copia.jpg");
+    }
+    .puerta {
+        background-image: url("https://amadortours.files.wordpress.com/2012/05/280671_101932933240481_740505_o1.jpg");
+    }
+    form {
+        border-radius: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 20px;
+    }
+    .error1 {
+        color: red;
+        visibility: hidden;
+    }
+    .error {
+        color: white;
+    }
+    #formulario1 {
+        width: 500px;
+    }
+    form h2 {
+        text-align: center;
+        padding: 5px;
+    }
+    .boton {
+        text-align: center;
+    }
+    .contactos {
+        text-align: center;
+        margin: 20px;
+    }
+    .contactos i {
+        font-size: 100px;
+    }
+    #userStyle img {
+        height: 200px;
+    }
+    #userStyle {
+        text-align: left;
+    }
+    #userStyle form {
+        text-align: center;
+        padding: 5px;
+    }
+    .form1 {
+        border-radius: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5px;
+    }
+}

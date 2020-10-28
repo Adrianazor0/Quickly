@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly</title>
+    <link rel="shortcut icon" href="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/7a35659e45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var estado = localStorage.getItem("usu");
+            document.getElementById('h1').innerHTML = estado;
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/posts",
+                type: "GET",
+            }).then(function(data) {
+                for (var i = 0; i < data.length; i++) {
+                    $("#tablePosts").append("<tr> <td>" + data[i].userId + "</td> <td>" + data[i].id + "</td> <td>" + data[i].title + "</td> <td>" + data[i].body + "</td><tr>");
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="barra row">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-danger col">
+
+            <div class="boton col">
+                <h1 style="color: white; font-size: 25px;" id="h1"></h1>
+            </div>
+            <button type="submit" id="cerrar" class="btn btn-white">Cerrar sesion</button>
+        </nav>
+
+    </header>
+    <div class="despegar">
+        <h1 class="container despegar" id="nosotros">Informacion de usuarios</h1>
+        <table class=" table-hover table-dark table" id="tablePosts">
+            <thead>
+                <tr>
+                    <th>UserId</th>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="text-white bg-danger">
+            <div class="card-body ">
+                <blockquote class="blockquote mb-0 bordesito" id="imgback">
+                    <p><img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg"> Con nosotros al volante, todos tus viajes estan seguros. </p>
+                    <p><small>Avenida Abraham Lincoln 309, Santo Domingo, República Dominicana. Tel.809-849-0000</small></p>
+                </blockquote>
+
+            </div>
+        </div>
+        <div id="espacio"></div>
+    </footer>
+
+</body>
+
+</html>

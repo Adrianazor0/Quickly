@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly</title>
+    <link rel="shortcut icon" href="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/7a35659e45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <script>
+        window.onload = function() {
+            estado = localStorage.getItem("usu");
+            document.getElementById('h1').innerHTML = estado;
+        }
+    </script>
+</head>
+
+<body>
+    <header class="barra row">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-danger col">
+            <a id="nombreEmpresa" class="navbar-brand" href="index.html"><img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg">Quickly</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class=" navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown disable" aria-haspopup="true" aria-expanded="false">
+                          Servicios
+                        </a>
+                        <div class="dropdown-menu navbar-dark bg-danger" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="servicio1.html">Transporte de contendores</a>
+                            <a class="dropdown-item" href="servicio2.html">Transporte de carga suelta</a>
+                            <a class="dropdown-item" href="servicio3.html">Carga de Proyectos</a>
+                            <a class="dropdown-item" href="servicio4.html">Transporte turistico</a>
+                    </li>
+                    <li class="nav-item contact">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="row nav">
+                    <div class="boton col">
+                        <h1 style="color: white; font-size: 25px;" id="h1"></h1>
+                    </div>
+                    <div class="boton col">
+                        <button type="submit" id="cerrar" class="btn btn-white">Cerrar sesion</button>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <main class="despegar texto">
+        <div class="container despegar" id="nosotros">
+            <h1 class="usernav">Bienvenido</h1>
+            <p class="lead "> Que desea solicitar el dia de hoy?</p>
+        </div>
+        <div class="card-group" id="userStyle">
+            <div class="card">
+                <img src="https://www.dracontainers.com/blog/wp-content/uploads/2018/06/Banner1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Transporte de contenedores</h5>
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Seleccionar
+                      </button>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <form class="form1">
+                        <label for="desde">Desde:</label>
+                        <input type="text" name="desde" id="origen1" class="origen" placeholder="Punto de partida..."><span class="error1" id="eorigen1">*</span>
+                        <label for="hasta">Hasta:</label>
+                        <input type="text" name="hasta" class="destino" id="destino1" placeholder="Punto de llegada..."><span class="error1" id="edestino1">*</span>
+                        <label for="cuando">Fecha del viaje:</label>
+                        <input type="date" name="cuando" class="fecha" id="fecha1"><span class="error1" id="efecha1">*</span>
+                        <hr>
+                        <input type="submit" id="pedido1" class="pedido" value="confirmar">
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://scocargo.mx/wp-content/uploads/2019/09/Carga-Suelta-Articulo.jpg.png-1160x665.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Transporte de carga suelta</h5>
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Seleccionar
+                      </button>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <form class="form1">
+                        <label for="desde">Desde:</label>
+                        <input type="text" name="desde" id="origen2" class="origen" placeholder="Punto de partida..."><span class="error1" id="eorigen2">*</span>
+                        <label for="hasta">Hasta:</label>
+                        <input type="text" name="hasta" class="destino" id="destino2" placeholder="Punto de llegada..."><span class="error1" id="edestino2">*</span>
+                        <label for="cuando">Fecha del viaje:</label>
+                        <input type="date" name="cuando" class="fecha" id="fecha2"><span class="error1" id="efecha2">*</span>
+                        <hr>
+                        <input type="submit" class="pedido" id="pedido2" value="confirmar">
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://mantix.co/euro_la/wp-content/uploads/2019/09/cargaP-copia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Carga de Proyectos</h5>
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Seleccionar
+                      </button>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingTheree" data-parent="#accordionExample">
+                    <form class="form1">
+                        <label for="desde">Desde:</label>
+                        <input type="text" name="desde" id="origen3" class="origen" placeholder="Punto de partida..."><span class="error1" id="eorigen3">*</span>
+                        <label for="hasta">Hasta:</label>
+                        <input type="text" name="hasta" class="destino" id="destino3" placeholder="Punto de llegada..."><span class="error1" id="edestino3">*</span>
+                        <label for="cuando">Fecha del viaje:</label>
+                        <input type="date" name="cuando" class="fecha" id="fecha3"><span class="error1" id="efecha3">*</span>
+                        <hr>
+                        <input type="submit" class="pedido" id="pedido3" value="confirmar">
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://amadortours.files.wordpress.com/2012/05/280671_101932933240481_740505_o1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Transporte turistico</h5>
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="true" aria-controls="collapseFourth">
+                        Seleccionar
+                      </button>
+                </div>
+                <div id="collapseFourth" class="collapse" aria-labelledby="headingFourth" data-parent="#accordionExample">
+                    <form class="form1">
+                        <label for="desde">Desde:</label>
+                        <input type="text" name="desde" id="origen4" class="origen" placeholder="Punto de partida..."><span class="error1" id="eorigen4">*</span>
+                        <label for="hasta">Hasta:</label>
+                        <input type="text" name="hasta" class="destino" id="destino4" placeholder="Punto de llegada..."><span class="error1" id="edestino4">*</span>
+                        <label for="Cantidad">Cantidad de Pasajeros:</label>
+                        <input type="number" name="hasta" class="cantidad" id="cantidadp" placeholder="Cantidad pasajeros..."><span class="error1" id="ecantidadp">*</span>
+                        <label for="cuando">Fecha del viaje:</label>
+                        <input type="date" name="cuando" class="fecha" id="fecha4"><span class="error1" id="efecha4">*</span>
+                        <hr>
+                        <input type="submit" class="pedido" id="pedido4" value="confirmar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="text-white bg-danger">
+            <div class="card-body ">
+                <blockquote class="blockquote mb-0 bordesito" id="imgback">
+                    <p><img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg"> Con nosotros al volante, todos tus viajes estan seguros. </p>
+                    <p><small>Avenida Abraham Lincoln 309, Santo Domingo, República Dominicana. Tel.809-849-0000</small></p>
+                </blockquote>
+
+            </div>
+        </div>
+        <div id="espacio"></div>
+    </footer>
+</body>
+
+</html>

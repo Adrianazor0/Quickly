@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly</title>
+    <link rel="shortcut icon" href="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <script>
+        window.onload = function() {
+            var estado = localStorage.getItem("usu");
+            document.getElementById('h1').innerHTML = estado;
+            if ((estado == null) || (estado == "")) {
+                document.getElementById("navuser").style.display = "none";
+            } else {
+                document.getElementById("navnouser").style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body id="nosotrosPagina">
+    <header class="barra row">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-danger col">
+            <a id="nombreEmpresa" class="navbar-brand" href="index.html"><img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg"> Quickly</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown disable" aria-haspopup="true" aria-expanded="false">
+                          Servicios
+                        </a>
+                        <div class="dropdown-menu navbar-dark bg-danger" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="servicio1.html">Transporte de contendores</a>
+                            <a class="dropdown-item" href="servicio2.html">Transporte de carga suelta</a>
+                            <a class="dropdown-item" href="servicio3.html">Carga de Proyectos</a>
+                            <a class="dropdown-item" href="servicio4.html">Transporte turistico</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" onclick="nouser()">Solicitar servicio</a>
+                    </li>
+                    <li class="nav-item contact">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="row nav" id="navnouser">
+                    <form action="" id="formulario2" class="bg-danger text-white row">
+                        <h4 class="col">login:</h4>
+                        <div class="form-group col">
+                            <input type="text" class="form-control" id="user" placeholder="Usuario">
+                        </div>
+                        <div class="form-group col">
+                            <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                        </div>
+                        <div class="boton col">
+                            <button type="submit" id="iniciar" class="btn btn-white">Iniciar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row nav" id="navuser">
+                    <div class="boton col">
+                        <h1 style="color: white; font-size: 25px;" id="h1"></h1>
+                    </div>
+                    <div class="boton col">
+                        <button type="submit" id="cerrar" class="btn btn-white">Cerrar sesion</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <article>
+        <section class="despegar">
+
+            <div class="container" id="nosotros">
+                <img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg">
+                <h1>Quickly</h1>
+            </div>
+        </section>
+    </article>
+    <article>
+        <section class="borroso ">
+            <h2 id="nosotros" class="fondo text-white">Tu destino esta mas cerca de lo que crees</h2>
+        </section>
+
+        <section class="texto">
+            <p class="lead ">Agencias de transporte Quickly es una empresa de transporte dominicana. Estamos especializados en el transporte de todo tipo de carga dentro de la República Dominicana, conectando todo el pais. Hoy contamos con más de 400 personas expertas
+                en el servicio y con oficinas mas de 15 provincias.</p>
+            <p class="lead">
+                Agencias de transporte Quickly ofrece servicios de transporte de carga en contenedores, carga suelta, manejo de carga de proyectos y transporte turistico. Prestamos servicios en en la mayoria de provincias de la República Dominicana.
+            </p>
+        </section>
+    </article>
+    <article>
+        <section>
+            <h2 id="nosotros" class="fondo mision">Mision vision y valores</h2>
+        </section>
+        <section class="texto">
+            <h3 class="valor">MISIÓN</h3>
+            <p class="lead ">Somos un grupo de expertos en la industria del transporte nacional, comprometidos a ofrecer soluciones escalables, integradas y personalizadas de acuerdo a los requerimientos del cliente.</p>
+            <h3 class="valor">VISIÓN</h3>
+            <p class="lead ">Ser líder en el mercado dominicano de servicios de transporte terrestre.</p>
+            <h3 class="valor">Valores</h3>
+            <p class="lead "><b>Integridad:</b> Actuamos según nuestros valores corporativos, normas, leyes y reglamentaciones.</p>
+            <p class="lead "><b>Confiabilidad:</b> Nuestros procesos están diseñados para cumplir consistentemente los requisitos acordados en las condiciones establecidas con nuestros clientes, accionistas, colaboradores y partes interesadas.</p>
+            <p class="lead "><b>Pertenencia:</b> Nos identificamos con lo que hacemos y nos sentimos orgullosos de ser parte de la organización, de nuestros logros y metas.</p>
+            <p class="lead "><b>Compromiso:</b> Cumplimos lo prometido a nuestros clientes y somos responsables de nuestras acciones y acuerdos pactados.</p>
+            <p class="lead "><b>Proactividad:</b> Identificamos y nos anticipamos a las necesidades de nuestros clientes.</p>
+            <p class="lead "><b>Innovación:</b> Sentimos pasión por lo que hacemos, somos creativos en la búsqueda de soluciones a las exigencias de nuestros clientes, generando nuevas ideas y oportunidades de negocios.</p>
+
+
+        </section>
+    </article>
+    <footer>
+        <div class="text-white bg-danger">
+            <div class="card-body ">
+                <blockquote class="blockquote mb-0 bordesito" id="imgback">
+                    <p><img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg"> Con nosotros al volante, todos tus viajes estan seguros.</p>
+                    <p><small>Avenida Abraham Lincoln 309, Santo Domingo, República Dominicana. Tel.809-849-0000</small></p>
+                </blockquote>
+            </div>
+        </div>
+        <div id="espacio"></div>
+    </footer>
+</body>
+
+</html>

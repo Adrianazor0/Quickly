@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly</title>
+    <link rel="shortcut icon" href="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/7a35659e45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <script>
+        window.onload = function() {
+            var estado = localStorage.getItem("usu");
+            document.getElementById('h1').innerHTML = estado;
+            if ((estado == null) || (estado == "")) {
+                document.getElementById("navuser").style.display = "none";
+            } else {
+                document.getElementById("navnouser").style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="barra row">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-danger col">
+            <a id="nombreEmpresa" class="navbar-brand" href="index.html"><img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg"> Quickly</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown disable" aria-haspopup="true" aria-expanded="false">
+                          Servicios
+                        </a>
+                        <div class="dropdown-menu navbar-dark bg-danger" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="servicio1.html">Transporte de contendores</a>
+                            <a class="dropdown-item" href="servicio2.html">Transporte de carga suelta</a>
+                            <a class="dropdown-item" href="servicio3.html">Carga de Proyectos</a>
+                            <a class="dropdown-item" href="servicio4.html">Transporte turistico</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" onclick="nouser()">Solicitar servicio</a>
+                    </li>
+                    <li class="nav-item contact">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="row nav" id="navnouser">
+                    <form action="" id="formulario2" class="bg-danger text-white row">
+                        <h4 class="col">login:</h4>
+                        <div class="form-group col">
+                            <input type="text" class="form-control" id="user" placeholder="Usuario">
+                        </div>
+                        <div class="form-group col">
+                            <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                        </div>
+                        <div class="boton col">
+                            <button type="submit" id="iniciar" class="btn btn-white">Iniciar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row nav" id="navuser">
+                    <div class="boton col">
+                        <h1 style="color: white; font-size: 25px;" id="h1"></h1>
+                    </div>
+                    <div class="boton col">
+                        <button type="submit" id="cerrar" class="btn btn-white">Cerrar sesion</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="despegar">
+            <div class="container_despegar" id="nosotros">
+                <h1>Contactos</h1>
+            </div>
+        </section>
+        <section class="texto">
+            <p class="lead ">Favor de completar el formulario de peticiones si desea que un representante se comunique con usted para cualquier tipo de soliciud y su creacion de cuenta en caso de y tener una solo inicie seccion.</p>
+        </section>
+
+        <article class="container">
+            <form action="" id="formulario1" class="bg-danger text-white">
+                <h2>Formulario de Contacto</h2>
+
+                <div class="form-group">
+                    <div class="input-group is-invalid">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="provincia">Provincia</label>
+                        </div>
+                        <select class="custom-select" id="provincia">
+                                <option value="" selected="selected">Seleccione una opcion...</option>
+                                <option value="santodomingo">Santo Domingo</option>
+                                <option value="azua">Azua</option>
+                                <option value="puertoplata">Puerto Plata</option>
+                                <option value="sancristobal">San Cristobal</option>
+                                <option value="miches">Miches</option>
+                              </select>
+                    </div>
+                    <p class="error" id="eprovincia"></p>
+                </div>
+
+                <div class="form-group ">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" maxlength="25">
+                    <p class="error" id="enombre"></p>
+                </div>
+
+                <div class="form-group ">
+                    <input type="text" class="form-control" id="nombree" name="nombree" placeholder="Nombre de la Empresa....">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" maxlength="25">
+                    <p class="error" id="eapellido"></p>
+                </div>
+
+                <div class="form-group ">
+                    <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono" maxlength="12">
+                    <p class="error" id="etelefono">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo">
+                    <p class="error" id="ecorreo"></p>
+                </div>
+                <div class="boton">
+                    <input class="btn btn-white" id="enviar" type="submit" value="Confirmar">
+                </div>
+            </form>
+        </article>
+
+        <nav id="socialRedes">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/" class="icono" target="_blank">
+                        <span><i class="fab fa-twitter-square bg-danger text-white"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" class="icono" target="_blank">
+                        <span><i class="fab fa-instagram-square bg-danger text-white"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" class="icono" target="_blank">
+                        <span><i class="fab fa-facebook-square  bg-danger text-white"></i></i></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="texto">
+            <p style="text-align: center;" class="lead ">Si prefiere puede utilizar estas vias para comunicarse tambien.</p>
+        </section>
+        <div class="row texto contactos">
+            <div class="col">
+                <i class="fas fa-phone-square-alt text-danger"></i>
+                <p class="lead ">Tel: (809) 849-0000</p>
+            </div>
+            <div class="col">
+                <i class="fas fa-map-marked text-danger"></i>
+                <p class="lead ">Avenida Abraham Lincoln 309, Santo Domingo, República Dominicana</p>
+            </div>
+            <div class="col">
+                <i class="far fa-hand-point-right text-danger"></i>
+                <p class="lead ">O nuestras redes sociales en la derecha</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="text-white bg-danger">
+            <div class="card-body ">
+                <blockquote class="blockquote mb-0 bordesito" id="imgback">
+                    <p><img src="https://www.carrosrd.com/files/158347063512717158_1662398160684657_6546477339730197616_n.jpg"> Con nosotros al volante, todos tus viajes estan seguros.</p>
+                    <p><small>Avenida Abraham Lincoln 309, Santo Domingo, República Dominicana. Tel.809-849-0000</small></p>
+                </blockquote>
+            </div>
+        </div>
+        <div id="espacio"></div>
+    </footer>
+
+</body>
+
+</html>
